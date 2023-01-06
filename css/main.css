@@ -103,6 +103,7 @@ body {
     background-color: var(--CLR-PRIMARY-200);
     border-radius: 0.5rem;
     overflow: hidden;
+    max-width:1440px;
 
     display: flex;
     flex-flow: column nowrap;
@@ -124,7 +125,7 @@ body {
   flex-flow: column nowrap;
   gap:2rem;
   padding:1rem;
-  font-size:1.5rem;
+  font-size:1.2rem;
   color: var(--CLR-NEUTRAL-900);
   font-weight: var(--FW-BOLD);
 }
@@ -132,7 +133,7 @@ body {
 .uppercase{
   display: block;
   text-transform: uppercase;
-  font-size:0.8rem;
+  font-size:0.75rem;
   font-family: var(--FF-ACCENT);
   font-weight: var(--FW-REGULAR);
   color: var(--CLR-NEUTRAL-700);
@@ -168,8 +169,18 @@ p{
   /* z-index: 1; */
   opacity:0.45;
 }
-.business{}
 
-@media screen {
-  
+@media (min-width:600px) {
+  .business{
+    flex-flow: row;
+  }
+  .business__stats{
+    flex-flow:row;
+  }
+  .image_business{
+    order:2;
+  }
+  .business__product{
+    max-width: 400px;
+  }
 }
