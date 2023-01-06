@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- displays site properly based on user's device -->
+
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./images/favicon-32x32.png"
+        />
+        <link rel="stylesheet" href="css/main.css" />
+        <title>Frontend Mentor | Stats preview card component</title>
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <main>
+            <article class="business">
+                <div class="image_business">
+                    <picture class="business__img">
+                        <source
+                            srcset="images/image-header-desktop.jpg"
+                            media="(min-width:600px)"
+                        />
+                        <img
+                            src="images/image-header-mobile.jpg"
+                            alt="Gabrielle Essence Perfume bottle lying on a table."
+                        />
+                    </picture>
+                </div>
+                <div class="business__product">
+                    <h1 class="business__title">
+                        Get <span class="purple">insights</span> that help your
+                        business grow.
+                    </h1>
+                    <p>
+                        Discover the benefits of data analytics and make better
+                        decisions regarding revenue, customer experience, and
+                        overall efficiency.
+                    </p>
+                    <div class="business__stats">
+                        <p>10k+ <span class="uppercase">companies</span></p>
+                        <p>314 <span class="uppercase">templates</span></p>
+                        <p>12M+ <span class="uppercase">queries</span></p>
+                    </div>
+                </div>
+            </article>
+        </main>
+    </body>
+</html>
